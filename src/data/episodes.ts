@@ -113,6 +113,6 @@ export const sagaNames: Record<SagaId, string> = {
  */
 export const sagaTagClasses: Record<SagaId, string> = {
   macross: 'inline-block text-[10px] font-semibold uppercase tracking-wide text-primary',
-  masters: 'inline-block text-[10px] font-semibold uppercase tracking-wide text-accent-dim',
+  masters: 'inline-block text-[10px] font-semibold uppercase tracking-wide text-accent-dim-text',
   'new-generation': 'inline-block text-[10px] font-semibold uppercase tracking-wide text-text-secondary',
 }

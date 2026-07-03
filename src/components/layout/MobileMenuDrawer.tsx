@@ -25,6 +25,8 @@ export default function MobileMenuDrawer({ isOpen, onClose, id }: MobileMenuDraw
       <nav
         id={id}
         aria-label="Navegación principal móvil"
+        aria-hidden={!isOpen}
+        inert={!isOpen}
         className={`absolute top-full left-0 z-50 w-full border-b border-border bg-surface-alt [clip-path:polygon(0_0,100%_0,100%_calc(100%-16px),calc(100%-16px)_100%,0_100%)] transition-all duration-200 ease-out md:hidden ${
           isOpen
             ? 'translate-y-0 opacity-100'

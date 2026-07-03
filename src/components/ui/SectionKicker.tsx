@@ -5,7 +5,7 @@ interface SectionKickerProps {
 
 /**
  * Small uppercase "[ ... ]" label used above section titles across the
- * site (Hero, Sagas, Why, FinalCta, ComingSoon).
+ * site (Hero, Sagas, Why, FinalCta, NotFound).
  *
  * `className` must include the text size (e.g. `text-sm` for section
  * headers, `text-xs` for card kickers) since callers need different

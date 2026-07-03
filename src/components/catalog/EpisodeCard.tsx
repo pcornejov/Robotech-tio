@@ -23,12 +23,12 @@ export default function EpisodeCard({ episode }: EpisodeCardProps) {
       >
         <div className="relative flex aspect-video items-center justify-center overflow-hidden bg-[repeating-linear-gradient(135deg,#1C2530_0px,#1C2530_10px,#131A24_10px,#131A24_20px)]">
           <Wordmark className="scale-75 text-sm opacity-20" />
-          <span className="absolute left-2 top-2 border border-border bg-background/60 px-2 py-0.5 font-display text-[11px] uppercase tracking-wide text-text-secondary/60">
+          <span className="absolute left-2 top-2 border border-border bg-background/60 px-2 py-0.5 font-display text-[11px] uppercase tracking-wide text-text-secondary">
             {episodeLabel}
           </span>
         </div>
         <div className="p-3 md:p-4">
-          <span className={`${sagaTagClasses[episode.saga]} text-text-secondary/60`}>
+          <span className={`${sagaTagClasses[episode.saga]} text-text-secondary`}>
             {sagaNames[episode.saga]}
           </span>
           <p className="mt-1.5 font-body text-sm uppercase tracking-wide text-text-secondary">

@@ -62,7 +62,7 @@ export default function EpisodeSidebar({ currentEpisode }: EpisodeSidebarProps) 
                 className="flex select-none gap-3 border border-border/60 bg-surface/60 p-2 opacity-50 [clip-path:polygon(8px_0,100%_0,100%_calc(100%-8px),calc(100%-8px)_100%,0_100%,0_8px)]"
               >
                 <div className="flex aspect-video w-24 flex-shrink-0 items-center justify-center bg-surface-alt md:w-28">
-                  <span className="font-display text-[10px] uppercase tracking-wide text-text-secondary/60">
+                  <span className="font-display text-[10px] uppercase tracking-wide text-text-secondary">
                     EP. {String(ep.order).padStart(2, '0')}
                   </span>
                 </div>

@@ -5,6 +5,7 @@ import Capitulos from './pages/Capitulos'
 import EpisodioPlayer from './pages/EpisodioPlayer'
 import Personajes from './pages/Personajes'
 import MechasSagas from './pages/MechasSagas'
+import NotFound from './pages/NotFound'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/capitulos/:order" element={<EpisodioPlayer />} />
         <Route path="/personajes" element={<Personajes />} />
         <Route path="/mechas-sagas" element={<MechasSagas />} />
+        <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>
   )

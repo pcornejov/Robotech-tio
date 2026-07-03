@@ -9,7 +9,7 @@ interface SagaCardProps {
 
 /**
  * Clickable teaser card for one of the three Robotech sagas. The whole
- * card links to the (placeholder) Mechas y Sagas page.
+ * card links to the Mechas y Sagas page.
  */
 export default function SagaCard({ kicker, name, description }: SagaCardProps) {
   return (

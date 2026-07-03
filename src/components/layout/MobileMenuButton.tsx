@@ -16,7 +16,7 @@ export default function MobileMenuButton({ isOpen, onClick, controlsId }: Mobile
       aria-label={isOpen ? 'Cerrar menú' : 'Abrir menú'}
       aria-expanded={isOpen}
       aria-controls={controlsId}
-      className="relative flex h-10 w-10 flex-col items-center justify-center gap-1.5 border border-border [clip-path:polygon(6px_0,100%_0,100%_calc(100%-6px),calc(100%-6px)_100%,0_100%,0_6px)] md:hidden"
+      className="relative flex h-11 w-11 flex-col items-center justify-center gap-1.5 border border-border [clip-path:polygon(6px_0,100%_0,100%_calc(100%-6px),calc(100%-6px)_100%,0_100%,0_6px)] md:hidden"
     >
       <span
         className={`h-0.5 w-5 bg-text-primary transition-all duration-200 ${

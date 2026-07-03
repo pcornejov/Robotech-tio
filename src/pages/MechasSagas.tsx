@@ -1,6 +1,7 @@
 import SectionKicker from '../components/ui/SectionKicker'
 import MechaCard from '../components/catalog/MechaCard'
 import FactionCard from '../components/catalog/FactionCard'
+import { baseChipClasses, unselectedChipClasses } from '../components/ui/chipClasses'
 import { mechas } from '../data/mechas'
 import { factions } from '../data/factions'
 import { sagas } from '../data/sagas'
@@ -30,19 +31,19 @@ export default function MechasSagas() {
         <div className="flex flex-wrap justify-center gap-2 md:gap-3">
           <a
             href="#mechas"
-            className="inline-flex items-center px-4 py-2 font-body text-xs font-semibold uppercase tracking-wide transition-colors duration-200 border [clip-path:polygon(8px_0,100%_0,100%_calc(100%-8px),calc(100%-8px)_100%,0_100%,0_8px)] border-border bg-surface text-text-secondary hover:border-primary hover:text-primary focus-visible:outline-none focus-visible:border-accent md:text-sm"
+            className={`${baseChipClasses} ${unselectedChipClasses}`}
           >
             Mechas
           </a>
           <a
             href="#facciones"
-            className="inline-flex items-center px-4 py-2 font-body text-xs font-semibold uppercase tracking-wide transition-colors duration-200 border [clip-path:polygon(8px_0,100%_0,100%_calc(100%-8px),calc(100%-8px)_100%,0_100%,0_8px)] border-border bg-surface text-text-secondary hover:border-primary hover:text-primary focus-visible:outline-none focus-visible:border-accent md:text-sm"
+            className={`${baseChipClasses} ${unselectedChipClasses}`}
           >
             Facciones
           </a>
           <a
             href="#sagas"
-            className="inline-flex items-center px-4 py-2 font-body text-xs font-semibold uppercase tracking-wide transition-colors duration-200 border [clip-path:polygon(8px_0,100%_0,100%_calc(100%-8px),calc(100%-8px)_100%,0_100%,0_8px)] border-border bg-surface text-text-secondary hover:border-primary hover:text-primary focus-visible:outline-none focus-visible:border-accent md:text-sm"
+            className={`${baseChipClasses} ${unselectedChipClasses}`}
           >
             Sagas / Timeline
           </a>
@@ -108,7 +109,7 @@ export default function MechasSagas() {
                   <p className="mt-3 font-body text-sm leading-relaxed text-text-secondary md:text-base">
                     {saga.description}
                   </p>
-                  <p className="mt-3 border-t border-border pt-3 font-body text-xs leading-relaxed text-text-secondary/80 md:text-sm">
+                  <p className="mt-3 border-t border-border pt-3 font-body text-xs leading-relaxed text-text-secondary md:text-sm">
                     {saga.extended}
                   </p>
                 </div>

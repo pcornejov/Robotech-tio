@@ -10,6 +10,7 @@ export default {
         primary: '#3A8FB7',
         accent: '#FF4A1C',
         'accent-dim': '#B8330F',
+        'accent-dim-text': '#D2662E',
         'text-primary': '#F2F5F8',
         'text-secondary': '#8C9BAC',
         border: '#2A3441',

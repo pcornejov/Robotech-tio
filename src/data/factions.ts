@@ -70,7 +70,7 @@ export const factionAccent: Record<FactionKey, FactionAccent> = {
     tint: 'bg-accent/5',
   },
   masters: {
-    text: 'text-accent-dim',
+    text: 'text-accent-dim-text',
     border: 'hover:border-accent-dim',
     borderSolid: 'border-accent-dim',
     bgSolid: 'bg-accent-dim',

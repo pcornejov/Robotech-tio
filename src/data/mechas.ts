@@ -55,7 +55,7 @@ export const mechas: Mecha[] = [
   {
     codigo: 'CYCLONE',
     nombre: 'Cyclone',
-    faccionKey: 'invid',
+    faccionKey: 'rdf',
     faccionLabel: 'Grupo Expedicionario (RDF)',
     modos: ['CICLO', 'ARMADURA'],
     descripcion:

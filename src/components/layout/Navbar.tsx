@@ -33,7 +33,7 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border bg-surface">
       <div className="relative mx-auto flex h-14 items-center justify-between px-6 md:h-[72px] md:px-8 lg:px-16">
-        <Wordmark className="text-lg font-bold tracking-widest md:text-xl" />
+        <Wordmark className="whitespace-nowrap text-base tracking-wide sm:text-lg sm:tracking-widest md:text-xl" />
 
         <nav aria-label="Navegación principal" className="hidden md:block">
           <ul className="flex items-center gap-8">

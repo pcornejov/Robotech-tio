@@ -133,7 +133,7 @@ export const sagaAccent: Record<SagaId, SagaAccent> = {
     tint: 'bg-primary/5',
   },
   masters: {
-    text: 'text-accent-dim',
+    text: 'text-accent-dim-text',
     border: 'hover:border-accent-dim',
     glow: 'hover:shadow-[0_0_20px_rgba(184,51,15,0.25)]',
     ghostText: 'text-accent-dim/10',
