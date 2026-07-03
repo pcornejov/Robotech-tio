@@ -1,16 +1,10 @@
 import { Link } from 'react-router-dom'
-import type { Episode, SagaId } from '../../data/episodes'
-import { sagaNames } from '../../data/episodes'
+import type { Episode } from '../../data/episodes'
+import { sagaNames, sagaTagClasses } from '../../data/episodes'
 import Wordmark from '../ui/Wordmark'
 
 interface EpisodeCardProps {
   episode: Episode
-}
-
-const sagaTagClasses: Record<SagaId, string> = {
-  macross: 'inline-block text-[10px] font-semibold uppercase tracking-wide text-primary',
-  masters: 'inline-block text-[10px] font-semibold uppercase tracking-wide text-accent-dim',
-  'new-generation': 'inline-block text-[10px] font-semibold uppercase tracking-wide text-text-secondary',
 }
 
 /**

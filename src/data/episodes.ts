@@ -106,3 +106,13 @@ export const sagaNames: Record<SagaId, string> = {
   masters: 'Robotech Masters',
   'new-generation': 'The New Generation',
 }
+
+/**
+ * Saga tag text color, shared across EpisodeCard, the episode player's
+ * error states and its info block.
+ */
+export const sagaTagClasses: Record<SagaId, string> = {
+  macross: 'inline-block text-[10px] font-semibold uppercase tracking-wide text-primary',
+  masters: 'inline-block text-[10px] font-semibold uppercase tracking-wide text-accent-dim',
+  'new-generation': 'inline-block text-[10px] font-semibold uppercase tracking-wide text-text-secondary',
+}
