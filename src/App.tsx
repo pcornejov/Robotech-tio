@@ -1,10 +1,10 @@
 import { Route, Routes } from 'react-router-dom'
 import Layout from './components/layout/Layout'
 import Home from './pages/Home'
-import ComingSoon from './pages/ComingSoon'
 import Capitulos from './pages/Capitulos'
 import EpisodioPlayer from './pages/EpisodioPlayer'
 import Personajes from './pages/Personajes'
+import MechasSagas from './pages/MechasSagas'
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
         <Route path="/capitulos" element={<Capitulos />} />
         <Route path="/capitulos/:order" element={<EpisodioPlayer />} />
         <Route path="/personajes" element={<Personajes />} />
-        <Route path="/mechas-sagas" element={<ComingSoon title="Mechas y Sagas" />} />
+        <Route path="/mechas-sagas" element={<MechasSagas />} />
       </Route>
     </Routes>
   )

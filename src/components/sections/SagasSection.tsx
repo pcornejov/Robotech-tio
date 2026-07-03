@@ -1,26 +1,6 @@
 import SectionKicker from '../ui/SectionKicker'
 import SagaCard from './SagaCard'
-
-const sagas = [
-  {
-    kicker: 'SAGA 01',
-    name: 'Macross Saga',
-    description:
-      'Primer contacto con lo desconocido. El nacimiento de la Fuerza de Defensa Robotech en medio de una guerra interestelar.',
-  },
-  {
-    kicker: 'SAGA 02',
-    name: 'Robotech Masters',
-    description:
-      'Una segunda generación de pilotos hereda la guerra. Nuevas amenazas, nueva tecnología, mismo cielo en llamas.',
-  },
-  {
-    kicker: 'SAGA 03',
-    name: 'The New Generation',
-    description:
-      'Un mundo devastado y una resistencia que se niega a rendirse. La última fase de la Guerra Robotech.',
-  },
-]
+import { sagas } from '../../data/sagas'
 
 /**
  * Home teaser for the three Robotech sagas, between Hero and Why.
