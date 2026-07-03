@@ -1,24 +1,17 @@
 import { Route, Routes } from 'react-router-dom'
-import Navbar from './components/layout/Navbar'
-import Footer from './components/layout/Footer'
-import Hero from './components/sections/Hero'
-
-function Landing() {
-  return (
-    <div className="flex min-h-screen flex-col bg-background">
-      <Navbar />
-      <main className="flex-1">
-        <Hero />
-      </main>
-      <Footer />
-    </div>
-  )
-}
+import Layout from './components/layout/Layout'
+import Home from './pages/Home'
+import ComingSoon from './pages/ComingSoon'
 
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<Landing />} />
+      <Route element={<Layout />}>
+        <Route path="/" element={<Home />} />
+        <Route path="/capitulos" element={<ComingSoon title="Capítulos" />} />
+        <Route path="/personajes" element={<ComingSoon title="Personajes" />} />
+        <Route path="/mechas-sagas" element={<ComingSoon title="Mechas y Sagas" />} />
+      </Route>
     </Routes>
   )
 }

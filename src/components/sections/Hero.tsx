@@ -1,14 +1,15 @@
+import { useNavigate } from 'react-router-dom'
 import Wordmark from '../ui/Wordmark'
 import Button from '../ui/Button'
 
 /**
- * Landing hero. The CTA has no catalog page to link to yet (iteration 1),
- * so it smooth-scrolls down to the footer as a placeholder interaction.
+ * Landing hero. The CTA links to the Capítulos page. `Button` only
+ * renders a native <button>, so navigation is done via `useNavigate`
+ * instead of wrapping it in a <Link> (which would nest interactive
+ * elements invalidly).
  */
 export default function Hero() {
-  const handleCtaClick = () => {
-    document.getElementById('footer')?.scrollIntoView({ behavior: 'smooth' })
-  }
+  const navigate = useNavigate()
 
   return (
     <section className="relative flex min-h-[80vh] items-center justify-center overflow-hidden bg-background px-6 text-center md:min-h-[85vh]">
@@ -36,7 +37,7 @@ export default function Hero() {
           solo lugar.
         </p>
 
-        <Button className="mt-8" onClick={handleCtaClick}>
+        <Button className="mt-8" onClick={() => navigate('/capitulos')}>
           Ver Capítulos
         </Button>
       </div>
